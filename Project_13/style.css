@@ -1,0 +1,260 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 7fr 2fr;
+    grid-template-rows: 70px 50px 1fr 170px;
+    gap: 10px;
+    background-color: #222831;
+}
+
+/*------------------------------------------*/
+/*                  HEADER                  */
+/*------------------------------------------*/
+
+header{
+    color: white;
+    grid-column: span 3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    margin-left: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 0.7s;
+}
+.name:hover{ color: coral }
+.registr{
+    height: 40px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: coral;
+    color: white;
+    transition: all 0.7s;
+}
+.registr:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 7px black;
+}
+#rule{
+    width: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+/*----------------------------------------------*/
+/*                  Navigation                  */
+/*----------------------------------------------*/
+
+nav{
+    border-radius: 10px;
+    border: coral solid 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+    grid-column: span 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.navbarMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.menuItem{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+.menuItem:hover{
+    color: dodgerblue;
+}
+.remove-button{
+    background-color: coral;
+    width: 30px;
+}
+
+/*----------------------------------------*/
+/*                  MAIN                  */
+/*----------------------------------------*/
+
+main{
+    border-radius: 10px;
+    border: coral solid 2px;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 1;
+}
+.galary{
+    display: flex;
+    justify-content: space-around;
+}
+
+#largeImg {
+    border: solid 1px dodgerblue;
+    width: 600px;
+    height: 400px;
+    padding: 5px;
+}
+#thumbs a {
+    border: solid 1px dodgerblue;
+    width: 150px;
+    height: 100px;
+    padding: 3px;
+    margin: 2px;
+    float: left;
+    transition: all 0.5s;
+}
+#thumbs a:hover {
+    border-color: coral;
+}
+#thumbs li {
+    list-style: none;
+}
+#thumbs {
+    margin: 0;
+    padding: 0;
+}
+#thumbs img{
+    width: 150px;
+    height: 100px;
+}
+#mainText {
+    border: 1px solid #BBB;
+    color: #444;
+}
+#mainButton{
+    background-color: dodgerblue;
+    color: white;
+    height: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.animation{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+/*----------------------------------------*/
+/*                  ADDS                  */
+/*----------------------------------------*/
+
+.adds{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid coral 2px;
+    padding: 20px;
+    grid-row: span 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 2;
+}
+.selected { background: coral; }
+#ul li{ cursor: pointer; }
+.slider {
+    border-radius: 5px;
+    background: white;
+    width: 310px;
+    height: 15px;
+    margin: 5px;
+    display: flex;
+}
+.thumb {
+    width: 10px;
+    height: 25px;
+    border-radius: 3px;
+    position: relative;
+    left: 10px;
+    top: -5px;
+    background: dodgerblue;
+    cursor: pointer;
+}
+.addsCar{
+    margin: 10px;
+    width: 150px;
+}
+#carItems{
+    list-style: none;
+    display: inline-block;
+    float: left;
+}
+.price{
+    visibility: hidden;
+}
+
+/*------------------------------------------*/
+/*                  FOOTER                  */
+/*------------------------------------------*/
+
+footer{
+    color: white;
+    grid-column: span 3;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 10px;
+}
+.footerItem{  margin: 0 30px; }
+.footerTitleText{
+    color: white;
+    font-size: 20px;
+}
+.footerTitleLine{
+    width: 40px;
+    border-bottom: 1px solid red;
+}
+.footerLink{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.footerOtherLink{
+    opacity: 0.7;
+    text-decoration: none;
+    color: coral;
+    transition: all 0.5s;
+}
+.footerOtherLink:hover{ opacity: 1 }
+.footerLink:hover{ color: dodgerblue }
+
+/*-----------------------------------------*/
+/*                  MEDIA                  */
+/*-----------------------------------------*/
+
+@media all and (max-width: 1000px){
+    #field{ width: 500px }
+    header{ grid-column: span 1; }
+    nav{ grid-column: span 1; }
+    main { grid-column: span 1; }
+    .adds{
+        grid-column: span 1;
+        grid-row-start: 4;
+    }
+    footer{
+        grid-column: span 1;
+        grid-row-start: 5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 50px 1fr 1fr 600px;
+    }
+}

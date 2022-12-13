@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Автосалон</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="" class="name">Black Lightning</a>
+        <img src="images/rule.png" id="rule">
+        <div class="reg">
+            <button class="registr" id="enter">Вход</button>
+            <button class="registr" id="registration">Регистрация</button>
+        </div>
+    </header>
+    <nav>
+        <div class="navbarWrap">
+            <ul class="navbarMenu">
+                <li><a class="menuItem" href="cars.html">Автомобили</a></li>
+                <li><a class="menuItem" href="#">Запчасти</a></li>
+                <li><a class="menuItem" href="#">Услуги</a></li>
+                <li><a class="menuItem" href="contact.html">Обратная связь</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="adds">
+        <ul id="ul">
+            <li>ВАЗ-2101</li>
+            <li>ВАЗ-2107</li>
+            <li>ГАЗ-21</li>
+            <li>Москвич-412</li>
+            <li>ЗИЛ-131</li>
+        </ul>
+        <div id="slider" class="slider">
+            <div class="thumb"></div>
+        </div>
+        <div class="buy">
+            <img src="images/basket.png" style="width: 60px" id="gate" class="droppable">
+            <div class="addsSum">Сумма: </div>
+            <ul id="carItems">
+                <li>
+                    <img src="images/cards/card_2101.png" class="addsCar">
+                    <div class="price">100</div>
+                </li>
+                <li>
+                    <img src="images/cards/card_21.png" class="addsCar">
+                    <div class="price">200</div>
+                </li>
+                <li>
+                    <img src="images/cards/card_131.png" class="addsCar">
+                    <div class="price">320</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <main>
+        <div class="galary">
+        <p><img id="largeImg" src="images/Москвич.jpg" alt="Large image"></p>
+        <ul id="thumbs">
+            <li>
+                <a href="images/Запорожец.jpg"><img src="images/Запорожец.jpg"></a>
+            </li>
+            <li>
+                <a href="images/Волга.jpg"><img src="images/Волга.jpg"></a>
+            </li>
+            <li>
+                <a href="images/2107.jpg"><img src="images/2107.jpg"></a>
+            </li>
+            <li>
+                <a href="images/2101.jpg"><img src="images/2101.jpg"></a>
+            </li>
+            <li>
+                <a href="images/131.jpg"><img src="images/131.jpg"></a>
+            </li>
+        </ul>
+        </div>
+        <div class="animation">
+        <textarea id="mainText" rows="5" cols="60">Приветствуем на веб-странице автосалона "B. Lightning"!
+Наш автосалон успешно продает автомобили более 12 лет.
+У нас Вы сможете найти автомобиль, который подойдет именно Вам!
+  </textarea>
+        <button id="mainButton">Анимация</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footerItem">
+            <div class="footerTitle">
+                <div class="footerTitleText">About Us</div>
+                <div class="footerTitleLine"></div>
+            </div>
+            <div class="footerDescription">
+                <p>Some information</p>
+                <p>About</p>
+                <p>Us</p>
+            </div>
+        </div>
+        <div class="footerItem">
+            <div class="footerTitleText">Quick Links</div>
+            <div class="footerTitleLine"></div>
+            <div class="footerOtherDescription">
+                <p><a class="footerOtherLink" href="https://en.wikipedia.org/wiki/VAZ-2101">ВАЗ-2101</a></p>
+                <p><a class="footerOtherLink" href="https://en.wikipedia.org/wiki/GAZ-21">ГАЗ-21</a></p>
+                <p><a class="footerOtherLink" href="https://en.wikipedia.org/wiki/Moskvitch_412">Москвич</a></p>
+            </div>
+        </div>
+        <div class="footerItem">
+            <div class="footerTitleText">Shop</div>
+            <div class="footerTitleLine"></div>
+            <div class="footerDescription">
+                <p><a class="footerLink" href="#">Автомобили</a></p>
+                <p><a class="footerLink" href="#">Запчасти</a></p>
+                <p><a class="footerLink" href="#">Комплектующие</a></p>
+            </div>
+        </div>
+        <div class="footerItem">
+            <div class="footerTitleText">Contact Us</div>
+            <div class="footerTitleLine"></div>
+            <div class="footerDescription">
+                <p>Пушкина д.Колотушнкина</p>
+                <p><a class="footerLink" href="tel:88005553535">Телефон</a></p>
+                <p><a class="footerLink" href="mailto:BLight@mail.ru">Почта</a></p>
+            </div>
+        </div>
+    </footer>
+    <script src='script.js'></script>
+</body>
+</html>
