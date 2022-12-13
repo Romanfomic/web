@@ -1,0 +1,63 @@
+#head{
+    background-color: #b5d0ff;
+    border-bottom: 1px solid black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120px;
+}
+main{
+    padding-left: 10px;
+}
+A:visited {
+    color: #606;
+}
+A:hover {
+    color: #f00;
+}
+A:active {
+    color: #ff0;
+}
+
+header select{
+    background-color: #C7DCFF;
+    border-radius: 5px;
+    margin: -10px;
+    padding: 2px;
+}
+header li{
+    background-color: #C7DCFF;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+    text-decoration: overline;
+    list-style: none;
+    display: inline;
+}
+main{
+    padding-top: 120px;
+}
+article{
+    border: 1px solid lightslategrey;
+    width: 400px;
+    text-align: center;
+    margin: 10px;
+}
+aside fieldset{
+    border: 1px solid lightslategrey;
+    border-radius: 5px;
+    padding: 5px;
+}
+main aside{
+    position: fixed;
+    right: 5px;
+    float: right;
+    width: 200px;
+}
+#textarea:focus{
+    color: grey;
+}
+input::placeholder{
+    color: grey;
+}

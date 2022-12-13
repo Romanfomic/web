@@ -1,0 +1,201 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr 7fr 2fr;
+    grid-template-rows: 70px 50px 1fr 170px;
+    gap: 10px;
+    background-color: #222831;
+}
+
+/*------------------------------------------*/
+/*                  HEADER                  */
+/*------------------------------------------*/
+
+header{
+    color: white;
+    grid-column: span 3;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name{
+    margin-left: 20px;
+    color: white;
+    font-weight: 700;
+    font-size: 26px;
+    text-decoration: none;
+    transition: all 0.7s;
+}
+.name:hover{ color: coral }
+.registr{
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: coral;
+    color: white;
+    transition: all 0.7s;
+}
+.registr:hover{
+    transform: scale(1.05);
+    box-shadow: 2px 2px 7px black;
+}
+
+/*----------------------------------------------*/
+/*                  Navigation                  */
+/*----------------------------------------------*/
+
+nav{
+    border-radius: 10px;
+    border: coral solid 2px;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+.navbarMenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+}
+.menuItem{
+    font-size: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    transition: all 0.5s;
+}
+.menuItem:hover{
+    color: dodgerblue;
+}
+/*----------------------------------------*/
+/*                  MAIN                  */
+/*----------------------------------------*/
+
+main{
+    border-radius: 10px;
+    border: coral solid 2px;
+    height: 750px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*------------------------------------------*/
+/*                  FOOTER                  */
+/*------------------------------------------*/
+
+footer{
+    color: white;
+    grid-column: span 3;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 10px;
+}
+.footerItem{  margin: 0 30px; }
+.footerTitleText{
+    color: white;
+    font-size: 20px;
+}
+.footerTitleLine{
+    width: 40px;
+    border-bottom: 1px solid red;
+}
+.footerLink{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s;
+}
+.footerLink:hover{ color: dodgerblue }
+/*-------------------------------------------*/
+/*                  SIDEBAR                  */
+/*-------------------------------------------*/
+
+.sidebar{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid coral 2px;
+    padding-top: 20px;
+    grid-row: span 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*----------------------------------------*/
+/*                  ADDS                  */
+/*----------------------------------------*/
+
+.adds{
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    border: solid coral 2px;
+    padding-top: 20px;
+    grid-row: span 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+/*-----------------------------------------*/
+/*                  MEDIA                  */
+/*-----------------------------------------*/
+
+@media all and (max-width: 1500px){
+    header{grid-column: span 2}
+    nav{
+        grid-column: span 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .sidebar{
+        grid-row: span 1
+    }
+    main{
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+    }
+    .adds{
+        grid-row-start: 4;
+        grid-column: span 2;
+        padding-top: 15px;
+    }
+    body{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 70px 50px 1fr 1fr 300px;
+    }
+    footer{
+        grid-column: span 2;
+        grid-row-start: 5;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+@media all and (max-width: 1000px){
+    header{ grid-column: span 1; }
+    nav{ grid-column: span 1; }
+    main { grid-column: span 1; }
+    .sidebar{
+        grid-column: span 1;
+        grid-row-start: 5;
+    }
+    .adds{ grid-column: span 1; }
+    footer{
+        grid-column: span 1;
+        grid-row-start: 6;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+    }
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 70px 50px 1fr 1fr 1fr 600px;
+    }
+}

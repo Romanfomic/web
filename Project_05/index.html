@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/images/globe.png">
+  <title>Автосалон</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<header id="head">
+  <h1><img id="logo" src="images/blackCar.png" height="5%" width="5%">Автосалон Black Lightning</h1>
+  <nav>
+    <ul class="menu">
+      <li id="burger">
+        <div class="hamburger-menu">
+          <input id="menu_toggle" type="checkbox" />
+          <label class="menu_btn" for="menu_toggle">
+            <span></span>
+          </label>
+          <ul class="menu_box">
+            <li><a class="menu_item" href="#">Главная</a></li>
+            <li><a class="menu_item" href="#">Автомобили</a></li>
+            <li><a class="menu_item" href="#">О нас</a></li>
+            <li><a class="menu_item" href="#">Контакты</a></li>
+          </ul>
+        </div>
+      </li>
+      <li class="menuitem"><select onchange="location.hash = this.value ? this.value : ''">
+        <option>Автомобили</option>
+        <option value="#Volga">Волга</option>
+        <option value="#Moskvich">Москвич</option>
+        <option value="#Zaporozhec">Запорожец</option>
+      </select></li>
+      <li class="menuitem"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">О нас</a></li>
+      <li class="menuitem"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Партнеры</a></li>
+      <li class="menuitem"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Контакты</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<!-- Краткая информация -->
+  <h3><pre>Приветсвуем на веб-странице автосалона "B. Lightning"!
+Наш автосалон успешно продает автомобили более 12 лет.
+У нас Вы сможете найти автомобиль, который подойдет именно Вам!</pre></h3>
+
+  <header><h2>Автомобили</h2></header>
+  <section class="cars">
+    <!-- Волга -->
+    <article>
+    <header><h2 id="Volga">Волга</h2></header>
+    <div>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="/images/Волга.jpg" alt="Волга" height="218" width="388">
+    </a></p>
+    </div>
+    </article>
+  <!-- Москвич -->
+  <article>
+    <header><h2 id="Moskvich">Москвич</h2></header>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="/images/Москвич.jpg" alt="Москвич" height="218" width="388">
+    </a></p>
+    </div>
+  </article>
+  <!-- Запорожец -->
+  <article>
+    <header><h2 id="Zaporozhec">Запорожец</h2></header>
+    <div>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <img src="/images/Запорожец.jpg" alt="Запорожец" height="218" width="388">
+        </a></p>
+    </div>
+  </article>
+  </section>
+  <hr/>
+  <!-- Возврат к началу страницы -->
+  <a href="#head">Вернуться в начало страницы</a>
+  <hr/>
+</main>
+  <!-- Телефон -->
+<footer>
+  <address>
+    Чтобы получить больше информации, звоните на
+    <a href="tel:01234567890">горячую линию</a>
+    <p><small> ©copyright 2022 B.Light.</small></p>
+  </address>
+</footer>
+</body>
+</html>

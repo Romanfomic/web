@@ -1,0 +1,36 @@
+#head{
+    background-color: #b5d0ff;
+    border: 1px solid black;
+    border-radius: 10px;
+}
+main{
+    padding-left: 10px;
+}
+article > header{
+    background-color: #dfb0ff;
+    border-radius: 10px;
+    width: 200px;
+    padding-left: 5px;
+}
+section div{
+    background-color: #c9c9c9;
+    padding-left: 5px;
+    width: 400px;
+}
+main aside{
+    background-color: #ebebeb;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+A:visited {
+    color: #606;
+}
+A:hover {
+    color: #f00;
+}
+A:active {
+    color: #ff0;
+}
+header h2{
+    font-family: "Roboto Light";
+}

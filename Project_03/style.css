@@ -1,0 +1,61 @@
+#head{
+    background-color: #b5d0ff;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: sticky;
+    top: 0;
+}
+main{
+    padding-left: 10px;
+}
+article > header{
+    background-color: #dfb0ff;
+    border-radius: 10px;
+    width: 200px;
+    padding-left: 5px;
+}
+section div{
+    background-color: #c9c9c9;
+    padding-left: 5px;
+}
+section a{
+    padding-left: 100px;
+}
+article .descripe{
+    float: left;
+}
+main aside{
+    background-color: #ebebeb;
+    border-radius: 10px;
+    padding-left: 5px;
+    position: fixed;
+    right: 0;
+}
+A:visited {
+    color: #606;
+}
+A:hover {
+    color: #f00;
+}
+A:active {
+    color: #ff0;
+}
+adress{
+    display: inline;
+    position: absolute;
+    bottom: 0;
+}
+
+header li{
+    background-color: #C7DCFF;
+    border-radius: 5px;
+    padding: 2px;
+    margin: 5px;
+    text-decoration: overline;
+    list-style: none;
+    display: inline;
+}
+header nav{
+    position: relative;
+    top: 0;
+}

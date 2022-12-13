@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/images/globe.png">
+  <title>Автосалон</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<header id="head">
+  <h1><img id="logo" src="images/blackCar.png" height="5%" width="5%">Автосалон Black Lightning</h1>
+  <nav>
+    <ul class="menu">
+      <li id="burger">
+        <select onchange="location.hash = this.value ? this.value : ''">
+          <option>Меню</option>
+          <option><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">О нас</a></option>
+          <option><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Партнеры</a></option>
+          <option><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Контакты</a></option>
+        </select>
+      </li>
+      <li class="menuitem"><select onchange="location.hash = this.value ? this.value : ''">
+        <option>Автомобили</option>
+        <option value="#Volga">Волга</option>
+        <option value="#Moskvich">Москвич</option>
+        <option value="#Zaporozhec">Запорожец</option>
+      </select></li>
+      <li class="menuitem"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">О нас</a></li>
+      <li class="menuitem"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Партнеры</a></li>
+      <li class="menuitem"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Контакты</a></li>
+        <div class="dropdown">
+          <img class="dropbtn" src="/images/rule.png" alt="Волга" height="30" width="30">
+          <div class="dropdown-content">
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Уведомление 1</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Уведомление 2</a>
+            <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Уведомление 3</a>
+          </div>
+        </div>
+    </ul>
+  </nav>
+</header>
+<main>
+<!-- Краткая информация -->
+  <h3><pre>Приветсвуем на веб-странице автосалона "B. Lightning"!
+Наш автосалон успешно продает автомобили более 12 лет.
+У нас Вы сможете найти автомобиль, который подойдет именно Вам!</pre></h3>
+  <button class="btns" id="but1">But1</button>
+  <button class="btns" id="but2">But2</button>
+  <button class="btns" id="but3">But3</button>
+  <button class="btns" id="but4">But4</button>
+
+  <header><h2>Автомобили</h2></header>
+  <section class="cars">
+    <!-- Волга -->
+    <article>
+    <header><h2 id="Volga">Волга</h2></header>
+    <div>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="/images/Волга.jpg" alt="Волга" height="218" width="388">
+    </a></p>
+      <h3 class="description">Description</h3>
+    </div>
+    </article>
+  <!-- Москвич -->
+  <article>
+    <header><h2 id="Moskvich">Москвич</h2></header>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="/images/Москвич.jpg" alt="Москвич" height="218" width="388">
+    </a></p>
+    <h3 class="description">Description</h3>
+    </div>
+  </article>
+  <!-- Запорожец -->
+  <article>
+    <header><h2 id="Zaporozhec">Запорожец</h2></header>
+    <div>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <img src="/images/Запорожец.jpg" alt="Запорожец" height="218" width="388">
+        </a></p>
+      <h3 class="description">Description</h3>
+    </div>
+  </article>
+  <article>
+    <video controls width="400" poster="images/Волга.jpg">
+      <source src="/video/rickroll.mp4" type="video/mp4">
+    </video>
+    <h3 class="description">Description</h3>
+  </article>
+  </section>
+  <hr/>
+  <!-- Возврат к началу страницы -->
+  <a href="#head">Вернуться в начало страницы</a>
+  <hr/>
+</main>
+  <!-- Телефон -->
+<footer>
+  <address>
+    Чтобы получить больше информации, звоните на
+    <a href="tel:01234567890">горячую линию</a>
+    <p><small> ©copyright 2022 B.Light.</small></p>
+  </address>
+</footer>
+</body>
+</html>

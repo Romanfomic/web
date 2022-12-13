@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/images/globe.png">
+  <title>Автосалон</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+<header id="head">
+  <h1><img src="images/blackCar.png" height="5%" width="5%">Автосалон Black Lightning</h1>
+  <nav>
+    <ul>
+      <li><select onchange="location.hash = this.value ? this.value : ''">
+        <option>Автомобили</option>
+        <option value="#Volga">Волга</option>
+        <option value="#Moskvich">Москвич</option>
+        <option value="#Zaporozhec">Запорожец</option>
+      </select></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<!-- Краткая информация -->
+  <h3><pre>Приветсвуем на веб-странице автосалона "B. Lightning"!
+Наш автосалон успешно продает автомобили более 12 лет.
+У нас Вы сможете найти автомобиль, который подойдет именно Вам!</pre></h3>
+  <aside>
+    <form action="" method="get">
+      <fieldset>
+      <label for="email">Email: </label>
+      <input placeholder="exampleMail@mail.ru" type="email" name="email" id="email" required>
+      <br/>
+      <label for="tel">Телефон: </label>
+      <input placeholder="8(800)555-35-35" pattern="8-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" type="tel" name="tel" id="tel" required>
+      <br/>
+      <label for="name">Логин: </label>
+      <input placeholder="login" type="text" name="name" id="name" required>
+      <br/>
+      <label for="password">Пароль: </label>
+      <input placeholder="password" type="password" name="password" id="password">
+      <br/>
+      <lable for="date">Часовой пояс</lable>
+      <input type="datetime-local" name="date" id="date">
+      <br/>
+      <label for="checkbox">Получать рассылку</label>
+      <input type="checkbox" name="checkbox" id="checkbox" checked>
+      <br/>
+      <br/>
+      <button type="submit">Отправить</button>
+    </fieldset>
+      <fieldset>
+        <label for="textarea">Напишите отзыв:</label>
+        <textarea name="textarea" id="textarea" rows="7" cols="20"></textarea>
+        <br/>
+        <lable for="year">Оценка</lable>
+        <input type="number" name="year" id="year" min="4" max="5">
+        <br/>
+        <button type="submit">Отправить</button>
+      </fieldset>
+      </form>
+  </aside>
+  <section>
+    <header><h2>Автомобили</h2></header>
+    <!-- Волга -->
+    <article>
+    <header><h2 id="Volga">Волга</h2></header>
+    <div>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="/images/Волга.jpg" alt="Волга" height="218" width="388">
+    </a></p>
+    </div>
+    </article>
+    <h4>Скидка 100% после просмотра видео</h4>
+      <video controls width="400" poster="images/Волга.jpg">
+        <source src="/video/rickroll.mp4" type="video/mp4">
+      </video>
+  <!-- Москвич -->
+  <article>
+    <header><h2 id="Moskvich">Москвич</h2></header>
+    <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+      <img src="/images/Москвич.jpg" alt="Москвич" height="218" width="388">
+    </a></p>
+    </div>
+  </article>
+  <!-- Запорожец -->
+  <article>
+    <header><h2 id="Zaporozhec">Запорожец</h2></header>
+    <div>
+        <p><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+          <img src="/images/Запорожец.jpg" alt="Запорожец" height="218" width="388">
+        </a></p>
+    </div>
+  </article>
+    <iframe src="index2.html" width="500" height="400"></iframe>
+  <hr/>
+  <!-- Возврат к началу страницы -->
+  <a href="#head">Вернуться в начало страницы</a>
+  <hr/>
+  </section>
+</main>
+  <!-- Телефон -->
+<footer>
+  <address>
+    Чтобы получить больше информации, звоните на
+    <a href="tel:01234567890">горячую линию</a>
+    <p><small> ©copyright 2022 B.Light.</small></p>
+  </address>
+</footer>
+</body>
+</html>
